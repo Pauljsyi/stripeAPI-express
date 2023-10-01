@@ -25,9 +25,7 @@ const coffee_price_obj = {
 
 const express = require("express");
 var cors = require("cors");
-const stripe = require("stripe")(
-  "sk_test_51M8pJEJgWPjDbO5a4hPHnsvU2Vzxl380nHVqoXBTOJZ3fy6gKXtRODf35txO8NnlnQTD78apWpIwlcvs6hB5IFzJ00zT0Xt4aP"
-);
+const stripe = require("stripe")(STRIPE_PRIVATE_KEY);
 
 const app = express();
 
