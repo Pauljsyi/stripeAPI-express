@@ -52,7 +52,7 @@ app.post("/checkout", async (req, res) => {
     ]
 
   */
-  console.log(req.body);
+
   const items = req.body.items;
   let lineItems = [];
   items.forEach((item) => {
